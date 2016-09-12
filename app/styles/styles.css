@@ -58,7 +58,14 @@ table {
 
 /*//// GLOBAL SECTIONS ////*/
 /*////////////////////////*/
+#global-nav {
+	padding: 1rem;
+}
 
+#global-nav ul li {
+	display: inline-block;
+	padding: 0.5rem;
+}
 
 /*//// BASE TYPE ////*/
 /*//////////////////*/
