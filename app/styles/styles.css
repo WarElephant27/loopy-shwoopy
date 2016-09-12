@@ -22,7 +22,9 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	line-height: inherit;
 	vertical-align: baseline;
+	display: block;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -30,8 +32,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
-	background: pink;
+	line-height: 1.5;
+	background: #ffffff;
 }
 ol, ul {
 	list-style: none;
@@ -49,11 +51,80 @@ table {
 	border-spacing: 0;
 }
 
-/*//// BASE FONT ////*/
-/*//////////////////*/
 
-font-family: 'Palanquin', sans-serif;
-font-family: 'Poppins', sans-serif;
+/*----------------------------------------------------------------*/
+/*//// START CUSTOM STYLES ////*/
+/*---------------------------------------------------------------*/
+
+/*//// GLOBAL SECTIONS ////*/
+/*////////////////////////*/
+
+
+/*//// BASE TYPE ////*/
+/*//////////////////*/
+h1, h2, h3 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	margin: 1rem 0;
+}
+
+h4, h5, h6 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	margin: 0.5rem 0;
+}
+
+body, div, span, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, var,
+b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, details, embed, figcaption, footer, header, menu, nav, output, section, summary,
+time, mark {
+	font-family: 'Palanquin', sans-serif;
+	font-weight: 300;
+}
+
+/*//// ELEMENTS ////*/
+/*/////////////////*/
+.wrapper {
+	padding:2rem;
+}
+
+.button {
+
+	display: block;
+	padding:24px;
+	width:auto;
+	background: #56a18b;
+	color:#ffffff;
+	font-family: inherit;
+	font-size: 1.2em;
+	font-weight: 400;
+}
+
+a, a.link, .link {
+	color:#56a18b;
+	text-decoration: underline;
+	display: inline;
+}
+
+a:hover, a:hover.link, .link:hover {
+	color:#2b5146;
+}
+
+a:visited, a:visited.link, .link:visited {
+	color:#9ac7b9;
+}
+
+p {
+	margin:1rem 0;
+}
+
+/*//// SPACING, PADDING, MARGINS ////*/
+/*//////////////////////////////////*/
+
 
 
 /*//// @MEDIA /////*/
