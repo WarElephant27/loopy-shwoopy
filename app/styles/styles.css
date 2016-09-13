@@ -56,16 +56,45 @@ table {
 /*//// START CUSTOM STYLES ////*/
 /*---------------------------------------------------------------*/
 
+/*//// GRID ////*/
+/*/////////////*/
+.col-half {
+	
+}
+
+.col-quarter {
+	
+}
+
 /*//// GLOBAL SECTIONS ////*/
 /*////////////////////////*/
+
+/*------- NAV -------*/
+#global-nav .col-half {
+	display: inline-block;
+	width: 40%;
+}
+
 #global-nav {
-	padding: 1rem;
+	margin: 1.5rem 1rem;
+	position: auto;
+}
+
+#global-nav ul {
+	width: 40%;
+	display: inline-block;
+	position: absolute;
+	right:0;
 }
 
 #global-nav ul li {
 	display: inline-block;
-	padding: 0.5rem;
+	padding: 0.75rem;
+	background: none;
+	color: #56a18b;
+	font-weight: 700;
 }
+
 
 /*//// BASE TYPE ////*/
 /*//////////////////*/
