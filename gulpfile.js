@@ -44,7 +44,7 @@ gulp.task('watch', function () {
   // Watch HTML in app dir
   gulp.watch(['./app/*.html'], ['html']);
 
-  // Watch CSS in app dir
+  // Watch CSS 
   gulp.watch(['./app/styles/*.css'], ['css']);
 
 	// Watch .js files

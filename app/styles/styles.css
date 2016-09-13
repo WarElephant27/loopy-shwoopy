@@ -56,6 +56,13 @@ table {
 /*//// START CUSTOM STYLES ////*/
 /*---------------------------------------------------------------*/
 
+.ph {
+	background: #eeeeee;
+}
+.ph2 {
+	background: #cccccc;
+}
+
 /*//// GRID ////*/
 /*/////////////*/
 .col-half {
