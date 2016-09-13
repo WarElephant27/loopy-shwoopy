@@ -62,6 +62,10 @@ table {
 .ph2 {
 	background: #cccccc;
 }
+ul.inline-ul li {
+	display: inline-block;
+	padding:5px;
+}
 
 /*//// GRID ////*/
 /*/////////////*/
