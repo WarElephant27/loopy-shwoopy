@@ -66,35 +66,6 @@ table {
 	
 }
 
-/*//// GLOBAL SECTIONS ////*/
-/*////////////////////////*/
-
-/*------- NAV -------*/
-#global-nav .col-half {
-	display: inline-block;
-	width: 40%;
-}
-
-#global-nav {
-	margin: 1.5rem 1rem;
-	position: auto;
-}
-
-#global-nav ul {
-	width: 40%;
-	display: inline-block;
-	position: absolute;
-	right:0;
-}
-
-#global-nav ul li {
-	display: inline-block;
-	padding: 0.75rem;
-	background: none;
-	color: #56a18b;
-	font-weight: 700;
-}
-
 
 /*//// BASE TYPE ////*/
 /*//////////////////*/
@@ -106,7 +77,7 @@ h1, h2, h3 {
 
 h4, h5, h6 {
 	font-family: 'Poppins', sans-serif;
-	font-weight: 600;
+	font-weight: 500;
 	margin: 0.5rem 0;
 }
 
@@ -120,6 +91,73 @@ article, aside, details, embed, figcaption, footer, header, menu, nav, output, s
 time, mark {
 	font-family: 'Palanquin', sans-serif;
 	font-weight: 300;
+}
+
+h1 {
+	font-size: 3rem;
+	line-height: 3rem;
+}
+
+h2 {
+	font-size: 2rem;
+	line-height: 2rem;
+}
+
+h3 {
+	font-size:1.5rem;
+	line-height: 2rem;
+}
+
+h4 {
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+}
+
+h5 {
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+}
+
+h6 {
+	font-size: 1rem;
+	line-height: 1.25rem;
+}
+
+/*//// GLOBAL SECTIONS ////*/
+/*////////////////////////*/
+
+/*------- NAV -------*/
+#global-nav {
+	margin: 1.5rem 1rem 0 1rem;
+	padding:0 0 1rem 0;
+	position: auto;
+	border-bottom: 1px solid #cccccc;
+}
+
+#global-nav .col-half {
+	display: inline-block;
+	width: 40%;
+}
+
+#global-nav ul {
+	width: auto;
+	display: inline-block;
+	position: absolute;
+	right:1rem;
+}
+
+#global-nav ul li {
+	display: inline-block;
+	padding: 0.75rem;
+	background: none;
+	color: #56a18b;
+	font-weight: 700;
+}
+
+/*------ FOOTER -------*/
+footer {
+	border-top: 1px solid #cccccc;
+	padding: 2rem;
 }
 
 /*//// ELEMENTS ////*/
@@ -156,6 +194,20 @@ a:visited, a:visited.link, .link:visited {
 
 p {
 	margin:1rem 0;
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+p.txt-lrg {
+	font-size: 1.5rem;
+	line-height: 1.75rem;
+}
+
+q {
+	padding:2rem;
+	font-size: 1.5rem;
+	line-height: 1.75rem;
+	font-weight: 300;
 }
 
 /*//// SPACING, PADDING, MARGINS ////*/
