@@ -66,14 +66,64 @@ ul.inline-ul li {
 	display: inline-block;
 	padding:5px;
 }
+
+.img {
+	width: 100%;
+	display: inline-block;
+	margin-left: -40%;
+	position: relative;
+}
+
+.img-center img {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+
 .img img {
 	display: inline-block;
+	width: 100%;
+}
+
+.thingo h5 {
+	text-align: right;
+}
+
+.text {
+	position: absolute;
+	right:2rem;
+}
+
+.text p {
+	display: inline;
+	white-space: pre-wrap;
+	background: #ffffff;
+	box-shadow: 10px 0 0 #ffffff, -10px 0 0 #ffffff;
+	padding: 0rem;
+	line-height: 2.15rem;
+}
+
+#full-width-img {
+	position: relative;
+}
+
+#full-width-img .text {
+	position: absolute;
+	top:30%;
+}
+
+#just-imgs .img {
+	width:40%;
+	margin:1rem;
+	display: inline-block;
+	vertical-align: middle;
+
 }
 
 /*//// GRID ////*/
 /*/////////////*/
 .col-half {
-	width: 48%;
+	width: 60%;
 	display: inline-block;
 	vertical-align: top;
 	
@@ -94,7 +144,7 @@ h1, h2, h3 {
 
 h4, h5, h6 {
 	font-family: 'Poppins', sans-serif;
-	font-weight: 500;
+	font-weight: 700;
 	margin: 0.5rem 0;
 }
 
