@@ -66,6 +66,33 @@ ul.inline-ul li {
 	display: inline-block;
 	padding:5px;
 }
+.txt-bg {
+	line-height: 2.5rem;
+}
+
+.txt-bg span {
+	display: inline;
+	background: #ffffff;
+	white-space: pre-wrap;
+	padding: .1rem;
+}
+
+.fixed-img-wrap {
+	height: 600px;
+	overflow: hidden;
+	position: relative;
+}
+
+.fixed-img {
+	height:600px;
+	width: 100%;
+	top:0;
+	overflow: hidden;
+	position: fixed;
+	background-image: url('../images/ph3.jpg');
+	background-repeat: no-repeat;
+	z-index: -100;
+}
 
 /*//// GRID ////*/
 /*/////////////*/
