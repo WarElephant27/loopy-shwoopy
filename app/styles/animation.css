@@ -16,8 +16,8 @@
 
 @keyframes slideFadeDown {
     0% { top: 0; opacity: 1; }
-    30% { top: -3px; opacity: 1; }
-    100% { top:50px; opacity: 0; }
+    30% { top: 6px; opacity: 1; }
+    100% { top:-50px; opacity: 0; }
 }
 
 @keyframes grow {
@@ -131,7 +131,7 @@
 
 
 /* SIMPLE BOXES TEST */
-.simple-boxes { width:50%; margin:0 auto; letter-spacing: 0; line-height: 0; }
+.simple-boxes { width:100%; margin:0 auto; letter-spacing: 0; line-height: 0; }
 
 .sub-boxes { 
     width: 242px; 
@@ -269,7 +269,7 @@
 }
 
 .ani-box {
-    margin:20px;
+    /*margin:20px;*/
     padding:20px;
     position: relative;
 }
@@ -278,7 +278,9 @@
     height: 300px;
 }
 
-
+.fixed {
+    position: fixed;
+}
 
 
 

@@ -55,6 +55,12 @@ table {
 /*----------------------------------------------------------------*/
 /*//// START CUSTOM STYLES ////*/
 /*---------------------------------------------------------------*/
+html, body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
 
 .ph {
 	background: #eeeeee;
@@ -62,93 +68,14 @@ table {
 .ph2 {
 	background: #cccccc;
 }
-ul.inline-ul li {
-	display: inline-block;
-	padding:5px;
-}
-.txt-bg {
-	line-height: 2.5rem;
-}
 
-.txt-bg span {
-	display: inline;
-	background: #ffffff;
-	white-space: pre-wrap;
-	padding: .1rem;
-}
-
-.fixed-img-wrap {
-	height: 600px;
-	overflow: hidden;
-	position: relative;
-}
-
-.fixed-img {
-	height:600px;
-	width: 100%;
-	top:0;
-	overflow: hidden;
-	position: fixed;
-	background-image: url('../images/ph3.jpg');
-	background-repeat: no-repeat;
-	z-index: -100;
-}
-
-.img {
-	width: 100%;
-	display: inline-block;
-	margin-left: -40%;
-	position: relative;
-}
-
-.img-center img {
-	width: 100%;
-	display: inline-block;
-	position: relative;
-}
-
-.img img {
-	display: inline-block;
-	width: 100%;
-}
-
-.thingo h5 {
-	text-align: right;
-}
-
-.text {
-	position: absolute;
-	right:2rem;
-}
-
-.text p {
-	display: inline;
-	white-space: pre-wrap;
-	background: #ffffff;
-	box-shadow: 10px 0 0 #ffffff, -10px 0 0 #ffffff;
-	padding: 0rem;
-	line-height: 2.15rem;
-}
-
-#full-width-img {
-	position: relative;
-}
-
-#full-width-img .text {
-	position: absolute;
-	top:30%;
-}
-
-#just-imgs .img {
-	width:40%;
-	margin:1rem;
-	display: inline-block;
-	vertical-align: middle;
-
-}
 
 /*//// GRID ////*/
 /*/////////////*/
+.wrapper {
+	padding:2rem;
+}
+
 .col-half {
 	width: 60%;
 	display: inline-block;
@@ -159,6 +86,11 @@ ul.inline-ul li {
 .col-quarter {
 	
 }
+
+/*///// COLORS //////*/
+/*//////////////////*/
+/* green: #56a18b 
+*/
 
 
 /*//// BASE TYPE ////*/
@@ -217,6 +149,27 @@ h6 {
 	line-height: 1.25rem;
 }
 
+p {
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+p.txt-lrg {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+p.txt-mid {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+}
+
+p.txt-small {
+	font-size: .75rem;
+	line-height: 1.4rem;
+}
+
+
 /*//// GLOBAL SECTIONS ////*/
 /*////////////////////////*/
 
@@ -250,16 +203,16 @@ h6 {
 
 /*------ FOOTER -------*/
 footer {
+	margin: 1rem 0 0 0;
+	padding: 2rem;	
 	border-top: 1px solid #cccccc;
-	padding: 2rem;
 }
+
 
 /*//// ELEMENTS ////*/
 /*/////////////////*/
-.wrapper {
-	padding:2rem;
-}
 
+/* Buttons & Links */
 .button {
 
 	display: block;
@@ -287,15 +240,9 @@ a:visited, a:visited.link, .link:visited {
 	color:#9ac7b9;
 }
 
+/* text elements */
 p {
 	margin:1rem 0;
-	font-size: 1rem;
-	line-height: 1.5rem;
-}
-
-p.txt-lrg {
-	font-size: 1.5rem;
-	line-height: 2rem;
 }
 
 q {
@@ -305,8 +252,224 @@ q {
 	font-weight: 300;
 }
 
-/*//// SPACING, PADDING, MARGINS ////*/
+.fancy-text p {
+	display: inline;
+	white-space: pre-wrap;
+	background: #ffffff;
+	box-shadow: 10px 0 0 #ffffff, -10px 0 0 #ffffff;
+	padding: 0rem;
+	line-height: 2.15rem;
+}
+
+/* images and icons */
+img {
+	display: inline-block;
+	width: 100%;
+}
+
+
+/*//// PADDING, MARGINS, POSITIONING ////*/
+/*//////////////////////////////////////*/
+
+
+
+
+
+
+/*//////// LAYOUT MODULES ///////////*/
 /*//////////////////////////////////*/
+
+/* Skills Block */
+ul.skills-block, ul.skills-block li {
+	display: inline-block;
+}
+
+ul.skills-block li {
+	margin: .25rem 0;
+	padding: .25rem;
+	font-size: .9rem;
+	line-height: 1.2rem;
+	background: #eeeeee;
+
+}
+
+/* Center Text Box - Full Width */
+.center-box_full {
+	padding: 2rem;
+}
+
+/* Center Text Box - Contain */
+.center-box_contain {
+	margin: 1rem;
+	padding: 2rem; 
+}
+
+/* Half & Half - Image & Text */
+.half-half {
+	position: relative;
+}
+
+.half-half .img {
+	width: 100%;
+	display: inline-block;
+	margin-left: -40%;
+	position: relative;
+	overflow: hidden;
+}
+
+.half-half .text {
+	width: 60%;
+	display: inline-block;
+	vertical-align: top;
+	position: absolute;
+	right:2rem;
+}
+
+/* Classic Stack */
+.classic-stack {
+	margin:1rem;
+}
+
+.classic-stack .text {
+	margin:1rem;
+}
+
+/* Image w Overlay - Full Width */
+.img-overlay_full {
+	position: relative;
+}
+
+.img-overlay_full .text {
+	position: absolute;
+	top:1rem;
+	z-index: 1000;
+	margin:2rem;
+}
+
+/* Image w Overlay - Contained */
+.img-overlay_contain {
+	position: relative;
+	margin: 1rem;
+}
+
+.img-overlay_contain .text {
+	position: absolute;
+	top:1rem;
+	z-index: 1000;
+	margin:2rem;
+}
+
+/* 3 Col w Image Blocks */
+.imgs_3-col {
+	margin:1rem -4rem;
+}
+
+.imgs_3-col .img {
+	width:30%;
+	margin:.3rem;
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+/* 2 Col w Image Blocks */
+.imgs_2-col {
+	margin:1rem -4rem;
+}
+
+.imgs_2-col .img {
+	width:45%;
+	margin:.3rem;
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+/* 1 Col w Image Blocks */
+.imgs_1-col {
+	margin:1rem;
+}
+
+.imgs_1-col .img {
+	margin:.25rem 0;
+}
+
+/* Client Quote */
+.client-quote {
+	padding: 2rem;
+}
+
+.pros-cons {
+	margin: 1rem;
+	padding: 2rem;
+}
+
+.pros {
+
+}
+
+.cons {
+
+}
+
+/* Related Projects */
+.proj-related {
+	margin:1rem;
+}
+
+/* Project Cards */
+.proj-card {
+	margin:.5rem 0;
+}
+
+.card-front {
+	display: block;
+	position: relative;
+}
+
+.card-front h3 {
+	position: absolute;
+	display: inline-block;
+	bottom: 1rem;
+	margin: 0 1rem;
+	padding: 1rem;
+	white-space: pre-wrap;
+	background: #ffffff;
+}
+
+.card-back {
+	position: relative;
+	padding:2rem;
+	background: #56a18b;
+	color: #ffffff;
+}
+
+.card-back p {
+	margin: 0;
+	padding: 0;
+}
+
+.card-back a {
+	display: block;
+	width: auto;
+	margin: 1rem 0 0 0;
+	padding: .5rem;
+	border: 2px solid #ffffff;
+	color: #ffffff;
+	font-weight: 700;
+	text-decoration: none;
+	text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
