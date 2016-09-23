@@ -7,59 +7,158 @@
 		<link href="styles/styles.css" type="text/css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Palanquin:300,400,700|Poppins:500,700" rel="stylesheet">
 
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+		<script src="scripts/animation.js"></script>
+
 	</head>
 
 	<body>
+	<div id="about-page">
 	<!-- GLOBAL NAV -->
 	<!-- ////////// -->
-	<nav id="global-nav" class="ph"> 
-		<div class="col-half">
-		Krombopolus Michael <br> Assasin for Hire
+	<nav id="global-nav"> 
+		<div class="logo">
+			<img src="images/logo-70px.png">
 		</div>
 		<ul>
-			<li>Flerp dorps</li>
-			<li><a href="elements.html">Elements</a></li>
+			<li>about</li>
+			<li>work</li>
 		</ul>
 	</nav>
 	<!-- end global nav -->
 
 	<!-- BODY ELEMENTS -->
 	<!-- ///////////// -->
-	<div class="ph"> 
-		<div class="wrapper">
-			<h1>Hello World</h1>
+
+	<!-- Intro - Half and half -->
+	<div class="half-half">
+		<div class="img">
+		</div>
+
+		<div class="text">
+			<h1>Hello</h1>
+			<h3>Let's make awesome things together</h3>
 		</div>
 	</div>
 
-		<div class="wrapper ph2">
-			
-			<p class="txt-lrg">An introductory paragraph is larger because it is the most important. All other paragraphs are fucking lame, but at least Tony is very cute.</p>
+	<!-- I am - Half and half -->
+	<div class="half-half">
+		<div class="img"></div>
 
-			<p>Here's a smaller paragraph</p>
-
-			<p>Here's a smaller paragraph</p>
-
-			<h4>It's an H4</h4>
-			<h5>It's an H5</h5>
-			<h6>It's an H6</h6>
-			<h6>It's H6 land, home of the 6th heading</h6>
-			
-			<p>This book is largely concerned with Hobbits, and from its pages a reader may discover much of their character and a little of their history. Further information will also be found in the selection from the Red Book of Westmarch that has already been published, under the title of <a class="link" href="?">The Hobbit</a>. That story was derived from the earlier chapters of the Red Book, composed by Bilbo himself, the first Hobbit to become famous in the world at large, and called by him There and Back Again, since they told of his journey into the East and his return: an adventure which later involved all the Hobbits in the great events of that Age that are here related.</p>
-
-			<q>Stuff is around and here's a quote or whatever</q>
-
-			<p>Many, however, may wish to know more about this remarkable people from the outset, while some may not possess the earlier book. For such readers a few notes on the more important points are here collected from Hobbit-lore, and the first adventure is briefly recalled.</p>
-
-			<div class="button">BUTTON</div>
-
+		<div class="text fancy-text">
+			<p>Graphic designer turned 'web designer' turned UX designer. Gets pumped up for multi-channel UX, emerging technologies, wearables, IoT, and VR. Daydreams about modular design systems.</p>
 		</div>
-	<!-- end body elements -->
+	</div>
+
+	<!-- I've worked for - half and half -->
+	<div class="half-half">
+		<div class="img"></div>
+
+		<div class="text fancy-text">
+			<p>I've worked with companies like:</p>
+			<br>
+			<p>Bank of America</p>
+			<br>
+			<p>Merril Lynch</p>
+			<br>
+			<p>Dunkin Donuts</p>
+			<br>
+			<p>Veritas Genetics</p>
+		</div>
+	</div>
+
+	<!-- I've worked on - half and half -->
+	<div class="half-half">
+		<div class="img"></div>
+
+		<div class="text">
+		And worked on projects like these:
+		</div>
+	</div>
+
+	<!-- I've worked at - half and half -->
+	<div class="half-half">
+		<div class="img"></div>
+
+		<div class="text">
+		I've worked at places like: DigitasLBi, Kor Group, Boston Globe Media Group, WhatArmy, Boston Financial Data Services
+		</div>
+	</div>
+
+	<!-- I Can - half and half -->
+	<div class="half-half">
+		<div class="img"></div>
+
+		<div class="text">
+			My Top 10 Skills:
+			<ul>
+				<li>Thinking about the big picture</li>
+				<li>User journey mapping and workflow mapping</li>
+				<li>Heuristic evaluations</li>
+				<li>Being bros with developers #solidarity</li>
+				<li>Simplifying the shit out of that shit</li>
+				<li>Like, a million design applications</li>
+				<li>Front end dev like B.O.S.S.</li>
+				<li>Creating design systems</li>
+				<li>Prototyping</li>
+				<li>UI design when I feel like it</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Am I who you're looking for - half and half -->
+	<div class="center-box_contain">
+		<div class="img"></div>
+
+		<div class="text">
+			<p>I'm up for work and adventure in the Metro Boston area.
+		Looking for awesome peeps who just want to change the world. Opportunities to explore the possibilities of new interactive media and integration of technology into everyday life.</p>
+
+			<h3>Think we'd be besties?</h3>
+			<a class="button">Say Hey</a>
+		</div>
+	</div>
+		
+	<!-- fixed project images and animations -->
+	<div class="fixed-imgs flip-book">
+
+		<div class="half-half">
+			<div class="img">
+				<img src="images/triwrangles/confluence-01.png" class="flip-img">
+
+				<img src="images/triwrangles/confluence-02.png" class="flip-img hidden">
+
+				<img src="images/triwrangles/confluence-03.png" class="flip-img hidden">
+
+				<img src="images/triwrangles/confluence-04.png" class="flip-img hidden">
+
+				<img src="images/triwrangles/confluence-05.png" class="flip-img hidden">
+
+				<img src="images/triwrangles/confluence-06.png" class="flip-img hidden">
+
+				<img src="images/triwrangles/confluence-07.png" class="flip-img hidden">
+
+				<img src="images/triwrangles/confluence-08.png" class="flip-img hidden">
+
+				<img src="images/triwrangles/confluence-09.png" class="flip-img hidden">
+
+				<img src="images/triwrangles/confluence-10.png" class="flip-img hidden">
+			</div>
+		</div>
+	</div>
+
+
 
 	<!-- GLOBAL FOOTER -->
 	<!-- ///////////// -->
-	<footer>&copy; 2016 MEGACORP LTD</footer>
+	<footer>
+		<a href="index.html">About</a>
+		<a href="">Work</a>	
+		<div>&#8679; this end up &#8679;</div>
+	</footer>
 	<!-- end global footer -->
 
+	</div>
 	</body>
 
 </html>

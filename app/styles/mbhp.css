@@ -1,0 +1,56 @@
+#proj-mbhp {
+	position: relative;
+}
+
+#proj-mbhp .text {
+	vertical-align: middle;
+	top:10rem;
+}
+
+#proj-mbhp .fixed-imgs .img {
+	height: 100vh;
+}
+
+/* GRID */
+#proj-mbhp .grid {
+	position: relative;
+	display: block;
+	width:320px;
+	margin: 30vh 0 0 0;
+}
+
+#proj-mbhp .grid > div {
+	width: 50px;
+	height: 50px;
+	background: #ddece8;
+	display: inline-block;
+}
+
+/* TYPOGRAPHY */
+#proj-mbhp .typography {
+	position: relative;
+	display: block;
+	width:320px;
+	text-align: right;
+	margin: 0 0 0 0;
+}
+
+/* COLORS */
+#proj-mbhp .colors {
+	position: relative;
+	display: block;
+	width:320px;
+	margin: 0 0 0 0;
+}
+
+#proj-mbhp .colors > div {
+	width: 100px;
+	height: 100px;
+	background: red;
+	display: inline-block;
+}
+
+/* PHOTOS & PATTERNS */
+.img-pattern {
+	z-index: -100000;
+}

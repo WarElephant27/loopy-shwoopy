@@ -33,7 +33,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1.5;
-	background: #ffffff;
+	background: none;
 }
 ol, ul {
 	list-style: none;
@@ -69,6 +69,13 @@ html, body {
 	background: #cccccc;
 }
 
+.hidden {
+	visibility: hidden;
+}
+
+.flip-img {
+	position: fixed;
+}
 
 /*//// GRID ////*/
 /*/////////////*/
@@ -89,7 +96,12 @@ html, body {
 
 /*///// COLORS //////*/
 /*//////////////////*/
-/* green: #56a18b 
+/* 
+	dark-green: #2b5146;
+	green: #56a18b 
+	light green: #9ac7b9;
+	lightest green: #ddece8;
+	black: #333333;
 */
 
 
@@ -170,60 +182,31 @@ p.txt-small {
 }
 
 
-/*//// GLOBAL SECTIONS ////*/
-/*////////////////////////*/
-
-/*------- NAV -------*/
-#global-nav {
-	margin: 1.5rem 1rem 0 1rem;
-	padding:0 0 1rem 0;
-	position: auto;
-	border-bottom: 1px solid #cccccc;
-}
-
-#global-nav .col-half {
-	display: inline-block;
-	width: 40%;
-}
-
-#global-nav ul {
-	width: auto;
-	display: inline-block;
-	position: absolute;
-	right:1rem;
-}
-
-#global-nav ul li {
-	display: inline-block;
-	padding: 0.75rem;
-	background: none;
-	color: #56a18b;
-	font-weight: 700;
-}
-
-/*------ FOOTER -------*/
-footer {
-	margin: 1rem 0 0 0;
-	padding: 2rem;	
-	border-top: 1px solid #cccccc;
-}
-
-
 /*//// ELEMENTS ////*/
 /*/////////////////*/
 
 /* Buttons & Links */
-.button {
-
+.button, a.button {
 	display: block;
 	padding:24px;
 	width:auto;
 	background: #56a18b;
 	color:#ffffff;
+	text-decoration: none;
 	font-family: inherit;
 	font-size: 1.2em;
 	font-weight: 400;
 	text-align: center;
+}
+
+.button:hover, a.button:hover {
+	background: #9ac7b9;
+	color: #ffffff;
+}
+
+.button:visited, a.button:visited {
+	background: #9ac7b9;
+	color: #ffffff;
 }
 
 a, a.link, .link {
@@ -268,12 +251,83 @@ img {
 }
 
 
+/*//// GLOBAL SECTIONS ////*/
+/*////////////////////////*/
+
+/*------- NAV -------*/
+#global-nav {
+	margin: 0;
+	padding:1rem 1rem 0 1rem;;
+	position: relative;
+	border-bottom: 1px solid #cccccc;
+	text-align: center;
+}
+
+#global-nav .logo {
+	display: block;
+	width: 100%;
+}
+
+#global-nav .logo img {
+	width: 2rem;
+	margin:0 1rem 1rem 1rem;
+}
+
+#global-nav ul {
+	width: auto;
+	display: block;
+	position: relative;
+}
+
+#global-nav ul li {
+	display: inline-block;
+	position: relative;
+	width: auto;
+	margin:0 .25rem;
+	padding: 0.5rem 2rem;
+	background: #56a18b;
+	color: #ffffff;
+	font-weight: 500;
+	text-align: right;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+/*------ FOOTER -------*/
+footer {
+	margin: 1rem 0 0 0;
+	padding: 1rem 1rem 2rem 1rem;	
+	background: linear-gradient(rgba(50,50,50,1),rgba(10,10,10,1));
+	border-top: 1px solid #cccccc;
+	text-align: center;
+	color: #bbbbbb;
+}
+
+footer a {
+	display: block;
+	padding: 1rem;
+	margin:.5rem 0;
+	font-size: 1.5rem;
+	text-align: center;
+	text-decoration: none;
+}
+
+footer div {
+	border-top: 1px solid #cccccc;
+	padding: 1rem 0 0 0;
+}
+
+
 /*//// PADDING, MARGINS, POSITIONING ////*/
 /*//////////////////////////////////////*/
-
-
-
-
+.fixed-imgs {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+	background: #ffffff;
+}
 
 
 /*//////// LAYOUT MODULES ///////////*/
@@ -289,8 +343,7 @@ ul.skills-block li {
 	padding: .25rem;
 	font-size: .9rem;
 	line-height: 1.2rem;
-	background: #eeeeee;
-
+	background: #ddece8;
 }
 
 /* Center Text Box - Full Width */
@@ -302,17 +355,22 @@ ul.skills-block li {
 .center-box_contain {
 	margin: 1rem;
 	padding: 2rem; 
+	background: #333333;
+	color: #ffffff;
 }
 
 /* Half & Half - Image & Text */
 .half-half {
 	position: relative;
+	display: block;
+	margin:2rem 0;
+	background: none;
 }
 
 .half-half .img {
 	width: 100%;
 	display: inline-block;
-	margin-left: -40%;
+	margin-left: -30%;
 	position: relative;
 	overflow: hidden;
 }
@@ -321,8 +379,8 @@ ul.skills-block li {
 	width: 60%;
 	display: inline-block;
 	vertical-align: top;
-	position: absolute;
-	right:2rem;
+	position: relative;
+	left:35%;
 }
 
 /* Classic Stack */
@@ -341,7 +399,7 @@ ul.skills-block li {
 
 .img-overlay_full .text {
 	position: absolute;
-	top:1rem;
+	bottom:1rem;
 	z-index: 1000;
 	margin:2rem;
 }
@@ -354,7 +412,7 @@ ul.skills-block li {
 
 .img-overlay_contain .text {
 	position: absolute;
-	top:1rem;
+	bottom:1rem;
 	z-index: 1000;
 	margin:2rem;
 }
@@ -395,11 +453,15 @@ ul.skills-block li {
 /* Client Quote */
 .client-quote {
 	padding: 2rem;
+	background-color: #ddece8;
 }
 
+/* Pros v Cons */
 .pros-cons {
 	margin: 1rem;
 	padding: 2rem;
+	background: #333333;
+	color: #ffffff;
 }
 
 .pros {
@@ -407,7 +469,7 @@ ul.skills-block li {
 }
 
 .cons {
-
+	border-bottom: 1px solid #ffffff;
 }
 
 /* Related Projects */
@@ -425,6 +487,15 @@ ul.skills-block li {
 	position: relative;
 }
 
+.card-front .img {
+	height:15rem;
+	overflow: hidden;
+}
+
+.card-front .img img {
+	width: 150%;
+}
+
 .card-front h3 {
 	position: absolute;
 	display: inline-block;
@@ -437,6 +508,7 @@ ul.skills-block li {
 
 .card-back {
 	position: relative;
+	height: 11rem;
 	padding:2rem;
 	background: #56a18b;
 	color: #ffffff;
@@ -450,7 +522,7 @@ ul.skills-block li {
 .card-back a {
 	display: block;
 	width: auto;
-	margin: 1rem 0 0 0;
+	margin: 2rem 0 0 0;
 	padding: .5rem;
 	border: 2px solid #ffffff;
 	color: #ffffff;
@@ -460,7 +532,75 @@ ul.skills-block li {
 
 }
 
+.flip-book .img img {
+	width:100%;
+	background: #ffffff;
+	margin-top:15%;
+}
 
+
+#about-page .half-half .text {
+	width:70%;
+	left:25%;
+}
+
+
+
+
+
+
+.diamond-wrapper-outer {
+  background: linear-gradient(#333333, #222222);
+  height:30rem;
+  padding:8rem;
+  margin:0;
+}
+
+.diamond-wrapper {
+  display:inline-block;
+  height: auto;
+  width: 8.5rem;
+  //border:1px solid red;
+  vertical-align:top;
+}
+
+.diamond {
+  display:inline-block;
+  border:2px solid #008080;
+  height:5rem;
+  width:5rem;
+  transform: rotate(45deg);
+  margin:1.5rem;
+  background:transparent;
+  transition: 
+    width .1s, 
+    height .1s, 
+    border .1s, 
+    padding-top .1s, 
+    padding-left .1s;
+  transition-timing-function: 
+    cubic-bezier(1,1,1,0)
+}
+
+.inner-text {
+  display:block;
+  color:#77f7f7;
+  font-family:sans-serif;
+  width:3rem;
+  height:3rem;
+  padding:1.25rem;
+  text-align:center;
+  transform:rotate(-45deg);
+  font-size:2rem;
+}
+
+.diamond:hover {
+  width:5.1rem;
+  height:5.1rem;
+  border:2px solid #44c4c4;
+  padding-top:.25rem;
+  padding-left:.25rem;
+}
 
 
 

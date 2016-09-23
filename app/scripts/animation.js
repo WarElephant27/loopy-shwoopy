@@ -1,61 +1,61 @@
-// var boxOne = document.getElementsByClassName('box')[0],
-//     $boxTwo = $('.box:eq(1)');
+$(document).ready( function() {
 
-// document.getElementsByClassName('toggleButton')[0].onclick = function() {
-//   if(this.innerHTML === 'Play') 
-//   { 
-//     this.innerHTML = 'Pause';
-//     boxOne.classList.add('horizTranslate');
-//   } else {
-//     this.innerHTML = 'Play';
-//     var computedStyle = window.getComputedStyle(boxOne),
-//         marginLeft = computedStyle.getPropertyValue('margin-left');
-//     boxOne.style.marginLeft = marginLeft;
-//     boxOne.classList.remove('horizTranslate');    
-//   }  
-// }
+//set global vars
+var lastTrigger = 0;
+var i = 1;
 
-// $('.toggleButton:eq(1)').on('click', function() { 
-//   if($(this).html() === 'Play') 
-//   {
-//     $(this).html('Pause');
-//     $boxTwo.addClass('horizTranslate');
-//   } else {
-//     $(this).html('Play');
-//     var computedStyle = $boxTwo.css('margin-left');
-//     $boxTwo.removeClass('horizTranslate');
-//     $boxTwo.css('margin-left', computedStyle);
-//   }  
-// });
-window.onload=function() {
-var boxOne = document.getElementsByClassName('box')[0];
+////////////////////////////
+// FLIPBOOK SCROLL EFFECT //
+///////////////////////////
+
+//use scroll as function trigger
+window.onscroll = scrollFunction;
+
+//'do stuff when scrolled' function
+function scrollFunction() { 
+  
+  // track scroll and get img array
+  var scrollPos = window.scrollY;
+  var thisImg = $('.flip-img')[i];
+  var imgCount = $('.flip-img').length;
+  
+  console.log(i)
+  console.log('scrollPos ' + scrollPos);
+  console.log('lastTrigger' + lastTrigger);
+  
+  //scrolling down - check if scroll position is at next trigger position
+  var triggerDown = lastTrigger + 50;
+  var triggerUp = lastTrigger - 50;
+  
+  if(scrollPos >= triggerDown)  {
     
-document.getElementsByClassName('toggleButton')[0].onclick = function() {
-  if(this.innerHTML === 'Play') 
-  { 
-    this.innerHTML = 'Pause';
-    boxOne.classList.add('horizTranslate');
-  } else {
-    this.innerHTML = 'Play';
-    var computedStyle = window.getComputedStyle(boxOne),
-        marginLeft = computedStyle.getPropertyValue('margin-left');
-    boxOne.style.marginLeft = marginLeft;
-    boxOne.classList.remove('horizTranslate');    
-  }  
+    //reset trigger position, remove hidden class
+    lastTrigger = scrollPos;
+    $(thisImg).removeClass('hidden');
+    
+    if (i < imgCount) {
+    i = i+1;
+    }
+    
+    else if (i == imgCount) {
+      i = imgCount;
+    }
+   }
+  
+    //scrolling up - check if scroll position is at next trigger position
+  else if((scrollPos <= triggerUp)) {
+    
+    //reset trigger position, add hidden class
+    lastTrigger = scrollPos;
+    $(thisImg).addClass('hidden');
+      
+    if(i > 1) {
+      i = i-1;
+    }
+    
+  }
+  
 }
 
-}
 
-// $('.toggleButton:eq(1)').on('click', function() { 
-//   if($(this).html() === 'Play') 
-//   {
-//     $(this).html('Pause');
-//     $boxTwo.addClass('horizTranslate');
-//   } else {
-//     $(this).html('Play');
-//     var computedStyle = $boxTwo.css('background-color');
-//     $boxTwo.removeClass('horizTranslate');
-//     $boxTwo.css('background-color', computedStyle);
-//   }  
-// });
-
+}); //end document.ready

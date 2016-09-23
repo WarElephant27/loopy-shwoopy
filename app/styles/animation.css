@@ -1,5 +1,5 @@
 /* The animation code */
-@keyframes example {
+@keyframes fadeBg {
     from {background-color: white;}
     to {background-color: #cccccc;}
 }
