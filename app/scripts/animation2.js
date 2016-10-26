@@ -8,24 +8,25 @@ $(window).scroll(function() {
     
   var gridTxt = $(".grid-text");
   var gridTxtLoc = gridTxt.offset().top;
+
   var scrollPosition = window.scrollY;
     
 
-  var triggerPositionIn = viewport - 10;
-  var triggerPositionOut = viewport - 10;
+  var triggerPositionIn = gridTxtLoc;
+  var triggerPositionOut = gridTxtLoc + viewport;
 
-  console.log('viewport h ' + viewport); 
   console.log('scroll position ' + scrollPosition);
   console.log('grid-text offset ' + gridTxtLoc);
-  console.log('trigger position ' + triggerPositionIn);
+  console.log('trigger in ' + triggerPositionIn);
+  console.log('trigger out ' + triggerPositionOut)
 
-  if( scrollPosition > triggerPositionIn) {
+  if( scrollPosition > triggerPositionIn && scrollPosition < triggerPositionOut) {
     console.log('you made it');
-    $('.grid').removeClass('hidden');
+    //$('.grid > div').removeClass('hidden').addClass('grid-animate');
   }
 
   else if( scrollPosition > triggerPositionOut) {
-    $('.grid').addClass('hidden');
+    //$('.grid > div').addClass('hidden');
   } 
 });
 
