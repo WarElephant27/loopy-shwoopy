@@ -24,8 +24,8 @@ function scrollFunction() {
   console.log('lastTrigger' + lastTrigger);
   
   //scrolling down - check if scroll position is at next trigger position
-  var triggerDown = lastTrigger + 50;
-  var triggerUp = lastTrigger - 50;
+  var triggerDown = lastTrigger + 150;
+  var triggerUp = lastTrigger - 150;
   
   if(scrollPos >= triggerDown)  {
     

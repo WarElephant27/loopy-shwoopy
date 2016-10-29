@@ -293,7 +293,7 @@ img {
 /*------- NAV -------*/
 #global-nav {
 	margin: 0;
-	padding:1rem 1rem 0 1rem;;
+	padding:1rem 1rem 1rem 1rem;
 	position: relative;
 	background: #ffffff;
 	border-bottom: 1px solid #cccccc;
@@ -301,33 +301,40 @@ img {
 }
 
 #global-nav .logo {
-	display: block;
-	width: 100%;
+	display: inline-block;
+	width: 20%;
+	vertical-align: top;
 }
 
 #global-nav .logo img {
 	width: 2rem;
-	margin:0 1rem 1rem 1rem;
+	margin:0;
+	text-align: left;
+	display: block;
 }
 
 #global-nav ul {
-	width: auto;
-	display: block;
+	width: 70%;
+	display: inline-block;
 	position: relative;
+	text-align: right;
 }
 
 #global-nav ul li {
 	display: inline-block;
 	position: relative;
 	width: auto;
-	margin:0 .25rem;
-	padding: 0.5rem 2rem;
+	padding: 0.2rem .75rem;
 	background: #56a18b;
 	color: #ffffff;
 	font-weight: 500;
 	text-align: right;
 	text-transform: uppercase;
 	text-decoration: none;
+}
+
+#global-nav ul li:nth-child(1) {
+	margin:0 0.5rem;
 }
 
 /*------ FOOTER -------*/
@@ -406,18 +413,17 @@ ul.skills-block li {
 
 .half-half .img {
 	width: 100%;
-	display: inline-block;
-	margin-left: -30%;
+	display: block;
 	position: relative;
 	overflow: hidden;
 }
 
 .half-half .text {
-	width: 50%;
-	display: inline-block;
+	width: 100%;
+	display: block;
 	vertical-align: top;
 	position: relative;
-	left:35%;
+	padding:2rem;
 }
 
 /* Classic Stack */
