@@ -5,7 +5,7 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=yes" >
 		<link href="styles/styles.css" type="text/css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Palanquin:300,400,700|Poppins:500,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Palanquin:300,400,700|Poppins:300,500,700" rel="stylesheet">
 
 		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 		<script src="scripts/animation.js"></script>
@@ -13,13 +13,10 @@
 	</head>
 
 	<body>
-	<div id="about-page">
+	<div id="index" class="body-wrapper">
 	<!-- GLOBAL NAV -->
 	<!-- ////////// -->
-	<nav id="global-nav"> 
-		<div class="logo">
-			<img src="images/logo-70px.png">
-		</div>
+	<nav id="global-nav" class="content-wrapper"> 
 		<ul>
 			<li>about</li>
 			<li>work</li>
@@ -29,120 +26,85 @@
 
 	<!-- BODY ELEMENTS -->
 	<!-- ///////////// -->
+	<div class="bg-wrapper intro">
 
-	<!-- Intro - Half and half -->
-	<div class="half-half">
-		<div class="img">
-		</div>
-
-		<div class="text floating-card">
-			<h1>Hi there</h1>
-			<h3>I'm a graphic designer turned 'web designer' turned UX designer.</h3>
-			<p>Gets pumped up for multi-channel UX, emerging technologies, wearables, IoT, and VR. Daydreams about modular design systems.</p>
-		</div>
-	</div>
-
-	<!-- I've worked on - half and half -->
-	<div class="half-half">
-		<div class="img"></div>
-
-		<div class="text floating-card">
-		<h3>Stuff I've worked on</h3>
-		<a href="work.html">View work</a>
-		</div>
-	</div>
-
-	<!-- I've worked at - half and half -->
-	<div class="half-half">
-		<div class="img"></div>
-
-		<div class="text floating-card">
-		<h3>I've worked at places like:</h3> 
-		DigitasLBi, Kor Group, Boston Globe Media Group, WhatArmy, Boston Financial Data Services
-		</div>
-	</div>
-
-	<!-- I've worked for - half and half -->
-	<div class="half-half">
-		<div class="img"></div>
-
-		<div class="text floating-card">
-			<h3>I've worked with companies like:</h3>
-			Bank of America
-			<br>
-			Merril Lynch
-			<br>
-			Dunkin Donuts
-			<br>
-			Veritas Genetics
-		</div>
-	</div>
-
-	<!-- I Can - half and half -->
-	<div class="half-half">
-		<div class="img"></div>
-
-		<div class="text floating-card">
-			<h3>And I've got a lot of skills, like:</h3>
-			<ul>
-				<li>Thinking about the big picture</li>
-				<li>User journey mapping and workflow mapping</li>
-				<li>Heuristic evaluations</li>
-				<li>Being bros with developers #solidarity</li>
-				<li>Simplifying the shit out of that shit</li>
-				<li>Like, a million design applications</li>
-				<li>Front end dev like B.O.S.S.</li>
-				<li>Creating design systems</li>
-				<li>Prototyping</li>
-				<li>UI design when I feel like it</li>
-			</ul>
-		</div>
-	</div>
-
-	<a href="swillenburg-resume.pdf">Download a normal resume</a>
-
-	<!-- Am I who you're looking for - half and half -->
-	<div class="center-box_contain">
-		<div class="img"></div>
-
-		<div class="text">
-			<p>I'm up for work and adventure in the Metro Boston area.
-		Looking for awesome peeps who just want to change the world through awesome UX, opportunities to explore the possibilities of new interactive media, and ways to better integrate technology into everyday life.</p>
-
-			<h3>Think we'd be besties?</h3>
-			<a class="button">Say Hey</a>
-		</div>
-	</div>
-		
-	<!-- fixed project images and animations -->
-	<div class="fixed-imgs flip-book">
-
-		<div class="half-half">
-			<div class="img">
-				<img src="images/triwrangles/confluence-01.png" class="flip-img">
-
-				<img src="images/triwrangles/confluence-02.png" class="flip-img hidden">
-
-				<img src="images/triwrangles/confluence-03.png" class="flip-img hidden">
-
-				<img src="images/triwrangles/confluence-04.png" class="flip-img hidden">
-
-				<img src="images/triwrangles/confluence-05.png" class="flip-img hidden">
-
-				<img src="images/triwrangles/confluence-06.png" class="flip-img hidden">
-
-				<img src="images/triwrangles/confluence-07.png" class="flip-img hidden">
-
-				<img src="images/triwrangles/confluence-08.png" class="flip-img hidden">
-
-				<img src="images/triwrangles/confluence-09.png" class="flip-img hidden">
-
-				<img src="images/triwrangles/confluence-10.png" class="flip-img hidden">
+		<div class="content-wrapper">
+			
+			<div class="index-logo">
+				<img src="images/logo-ko.png">
 			</div>
+			<h1>Sierra Willenburg</h1>
+			<h2>UX Designer</h2>
+
+		</div>
+
+	</div>
+
+	<div class="bg-wrapper projects">
+		
+		<div class="project-card">
+			<span class="txt-small">Client Name</span>
+			<span class="txt-mid">Project Name</span>
+			<svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.33 20.94"><defs><style>.cls-1{fill:none;stroke:#56a08b;stroke-miterlimit:10;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><line class="cls-1" x1="11.67" x2="11.67" y2="18.93"/><polyline class="cls-1" points="22.98 8.92 11.67 20.24 0.35 8.92"/></g></g></svg>
+		</div>
+
+		<div class="project-card">
+			<span class="txt-small">Client Name</span>
+			<span class="txt-mid">Project Name</span>
+			<svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.33 20.94"><defs><style>.cls-1{fill:none;stroke:#56a08b;stroke-miterlimit:10;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><line class="cls-1" x1="11.67" x2="11.67" y2="18.93"/><polyline class="cls-1" points="22.98 8.92 11.67 20.24 0.35 8.92"/></g></g></svg>
+		</div>
+		<div class="project-card">
+			<span class="txt-small">Client Name</span>
+			<span class="txt-mid">Project Name</span>
+			<svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.33 20.94"><defs><style>.cls-1{fill:none;stroke:#56a08b;stroke-miterlimit:10;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><line class="cls-1" x1="11.67" x2="11.67" y2="18.93"/><polyline class="cls-1" points="22.98 8.92 11.67 20.24 0.35 8.92"/></g></g></svg>
+		</div>
+		<div class="project-card">
+			<span class="txt-small">Client Name</span>
+			<span class="txt-mid">Project Name</span>
+			<svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.33 20.94"><defs><style>.cls-1{fill:none;stroke:#56a08b;stroke-miterlimit:10;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><line class="cls-1" x1="11.67" x2="11.67" y2="18.93"/><polyline class="cls-1" points="22.98 8.92 11.67 20.24 0.35 8.92"/></g></g></svg>
+		</div>
+		<div class="project-card">
+			<span class="txt-small">Client Name</span>
+			<span class="txt-mid">Project Name</span>
+			<svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.33 20.94"><defs><style>.cls-1{fill:none;stroke:#56a08b;stroke-miterlimit:10;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><line class="cls-1" x1="11.67" x2="11.67" y2="18.93"/><polyline class="cls-1" points="22.98 8.92 11.67 20.24 0.35 8.92"/></g></g></svg>
+		</div>
+		<div class="project-card">
+			<span class="txt-small">Client Name</span>
+			<span class="txt-mid">Project Name</span>
+			<svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.33 20.94"><defs><style>.cls-1{fill:none;stroke:#56a08b;stroke-miterlimit:10;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><line class="cls-1" x1="11.67" x2="11.67" y2="18.93"/><polyline class="cls-1" points="22.98 8.92 11.67 20.24 0.35 8.92"/></g></g></svg>
+		</div>
+
+
+	</div>
+
+	<div class="bg-wrapper">
+		
+		<div class="content-wrapper">
+		<div class="about-me">
+			<h3>About me</h3>
+			<p>
+			Likes coffee, solves problems
+			</p><p>
+			I am a graphic designer turned 'web designer' turned UX designer looking for work and adventure in the Metro Boston area. I love multi-channel UX, 'service design', emerging technologies, wearables and IoT, and VR. I daydream about modular design systems.
+			</p>
+			<a>Download resume</a>
+		</div>
+		
+		<div class="contact">
+			<h4>I'm looking for work!</h4>
+			<h5>Hit me up</h5>
+			<svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.33 20.94"><defs><style>.cls-1{fill:none;stroke:#56a08b;stroke-miterlimit:10;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><line class="cls-1" x1="11.67" x2="11.67" y2="18.93"/><polyline class="cls-1" points="22.98 8.92 11.67 20.24 0.35 8.92"/></g></g></svg>
+
+			<form>
+				<label for="email">your email</label>
+				<input type="text" name="email">
+				
+				<textarea>your message</textarea>
+		</div>
 		</div>
 	</div>
 
-
+	<!-- end body elements -->
 
 	<!-- GLOBAL FOOTER -->
 	<!-- ///////////// -->
