@@ -319,9 +319,10 @@ img {
 	margin: 0;
 	padding: 1.4rem;
 	position: fixed;
+	top: 0;
+	z-index: 300;
 	text-align: right;
 }
-
 
 #global-nav ul {
 	width: auto;
@@ -344,7 +345,20 @@ img {
 }
 
 #global-nav ul li:nth-child(1) {
-	margin:0 0.5rem;
+	margin: 0 0.5rem;
+}
+
+#global-nav .mobile-nav {
+	width: 2.4rem;
+	height: 2.4rem;
+	position: absolute;
+	right: 1.4rem;
+	background: green;
+}
+
+#global-nav .mobile-nav svg {
+	width: 48px;
+	position: relative;
 }
 
 /*------ FOOTER -------*/
@@ -481,8 +495,12 @@ footer div {
 
 #index .contact {
 	margin: 4rem 0 0 0;
+	text-align: center;
 }
 
+#index .contact .arrow-down {
+	margin: 1rem auto;
+}
 
 
 /*//// @MEDIA /////*/
