@@ -1,5 +1,11 @@
 $(document).ready( function() {
 
+$('.mobile-nav').click(
+  function() {
+    $('.nav-inner').toggleClass('hidden');
+  });
+
+
 //set global vars
 var lastTrigger = 0;
 var i = 1;

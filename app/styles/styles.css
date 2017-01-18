@@ -226,6 +226,11 @@ p {
 
 /*//// ELEMENTS ////*/
 /*/////////////////*/
+.wrapper {
+	width: 100vw;
+	height: auto;
+	background: #ffffff;
+}
 
 /* Buttons & Links */
 .button, a.button {
@@ -251,7 +256,7 @@ p {
 	color: #ffffff;
 }
 
-a, a.link, .link {
+a.link, .link {
 	color:#56a08b;
 	text-decoration: underline;
 	display: inline;
@@ -282,7 +287,7 @@ p {
 }
 
 q {
-	padding:2rem;
+	padding:0;
 	font-size: 1.25rem;
 	line-height: 1.75rem;
 	font-weight: 300;
@@ -317,7 +322,7 @@ img {
 #global-nav {
 	width: 100%;
 	margin: 0;
-	padding: 1.4rem;
+	padding: 0;
 	position: fixed;
 	top: 0;
 	z-index: 300;
@@ -329,6 +334,7 @@ img {
 	display: inline-block;
 	position: relative;
 	text-align: right;
+	padding: 1.4rem;
 }
 
 #global-nav ul li {
@@ -353,12 +359,35 @@ img {
 	height: 2.4rem;
 	position: absolute;
 	right: 1.4rem;
-	background: green;
+	top: 1.4rem;
+	z-index: 400;
+	background: #56a18b;
+	border: 1px solid #ffffff;
 }
 
-#global-nav .mobile-nav svg {
-	width: 48px;
-	position: relative;
+#global-nav .nav-inner {
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	background: #ffffff;
+}
+
+#global-nav .nav-inner .content-wrapper {
+	text-align: center;
+	padding-top: 3rem;
+}
+
+#global-nav .nav-inner .content-wrapper a {
+	display: block;
+	/*padding: 22px 0;*/
+	text-decoration: none;
+
+}
+
+#global-nav .nav-inner .content-wrapper .divider{
+	height: 1px;
+	background: #56a18b;
 }
 
 /*------ FOOTER -------*/
@@ -393,28 +422,54 @@ footer div {
 
 /*//////// LAYOUT MODULES ///////////*/
 /*//////////////////////////////////*/
-/* Intro */
-.intro {
+/* cover */
+.bg-wrapper {
 	height: 100vh;
 	width: 100vw;
 }
 
-.intro h1, .intro h2 {
+.bg-wrapper.cover  {
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.cover h1, .cover h2 {
 	color: #ffffff;
 	margin: 0;
 }
 
-.intro .content-wrapper {
+.cover .content-wrapper {
 	height: auto;
 	position: absolute;
 	bottom: 2rem;
 }
 
+/* Intro */
+.bg-wrapper.intro {
+	margin: 100vh 0 0 0;
+	background: #56a08b;
+	color: #ffffff;
+}
+
+.bg-wrapper.intro .label {
+	text-transform: uppercase;
+}
+
 
 /* Client Quote */
 .client-quote {
-	padding: 2rem;
+	margin: 1.4rem 0;
+	padding: 1.4rem;
 	background-color: #ddece8;
+	border: 1px #333333 solid;
+}
+
+.client-quote span {
+	display: block;
+	margin: 0 0 0.4rem 0;
 }
 
 /* Pros v Cons */
@@ -436,8 +491,26 @@ footer div {
 /* Related Projects */
 
 
+
 /* Project Cards */
-.project-card {
+.nav-inner .project-card {
+	background: none;
+	color: #56a08b;
+	margin: 1px 0 0 0;
+	padding: 1rem 0 0 0;
+	position: relative;
+}
+
+.nav-inner .project-card::after {
+	content: '';
+	display: block;
+	width: 100px;
+	height: 1px;
+	margin: 1rem auto 0 auto;
+	background: #56a08b;
+}
+
+#index .projects .project-card {
 	background: #333333;
 	color: #56a08b;
 	margin: 1px 0 0 0;
@@ -445,21 +518,25 @@ footer div {
 	position: relative;
 }
 
-.project-card svg {
+#index .projects .project-card svg {
 	position: absolute;
 	right: 1.4rem;
 	bottom: 1.6rem;
+}
+
+#index .projects a {
+	text-decoration: none;
 }
 
 
 /*/////// PROJECT PAGES ////////*/
 /*/////////////////////////////*/
 /* Index */
-#index .bg-wrapper {
+#index .bg-wrapper.projects, #index .bg-wrapper.about-contact {
 	background: #ffffff;
 }
 
-#index .bg-wrapper.intro  {
+#index .bg-wrapper.cover  {
 	background: url('../images/index-bg.png');
 	background-size: cover;
 	position: fixed;
@@ -468,7 +545,7 @@ footer div {
 	z-index: -1;
 }
 
-#index .bg-wrapper.intro::after {
+#index .bg-wrapper.cover::after {
 	content: '';
 	background: #56a08b;
 	opacity: .75;
@@ -500,6 +577,11 @@ footer div {
 
 #index .contact .arrow-down {
 	margin: 1rem auto;
+}
+
+/* MBHP */
+#proj-mbhp .bg-wrapper.cover {
+	background: red;
 }
 
 
