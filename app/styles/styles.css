@@ -84,13 +84,11 @@ html, body {
 /*/////////////*/
 
 .wrapper, .bg-wrapper, .content-wrapper {
-	width: auto;
+	width: 100%;
 	display: block;
-	font-size:0;
 }
 
 .wrapper {
-	width: 100vw;
 	height: auto;
 	background: #ffffff;
 }
@@ -98,11 +96,15 @@ html, body {
 .bg-wrapper {
 	margin: 0 0;
 	padding: 0 0;
+	font-size:0;
+	line-height: 0;
 }
 
 .content-wrapper {
 	margin: 0 0;
 	padding: 1.4rem;
+	font-size: 1rem;
+	line-height: 1.6rem;
 }
 
 .col-2 {
@@ -156,7 +158,7 @@ html, body {
 h1, h2, h3 {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	margin: 1rem 0;
 }
 
@@ -443,6 +445,8 @@ footer div {
 .bg-wrapper {
 	height: 100vh;
 	width: 100vw;
+	display: flex;
+	align-items: center;
 }
 
 .bg-wrapper.cover  {
@@ -468,6 +472,8 @@ footer div {
 .bg-wrapper.intro {
 	position: relative;
 	margin: 100vh 0 0 0;
+	align-items: flex-start;
+	padding-top: 2.4rem;
 	background: #56a08b;
 	color: #ffffff;
 }
@@ -504,14 +510,12 @@ footer div {
 	margin: 0 0 0 4rem;
 }
 
-
-
 /* Client Quote */
 .client-quote {
 	margin: 1.4rem 0;
 	padding: 1.4rem;
-	background-color: #ddece8;
-	border: 1px #333333 solid;
+	background-color: #ffffff;
+	border: 1px #56a08b solid;
 }
 
 .client-quote span {
@@ -652,6 +656,16 @@ footer div {
 #proj-mbhp .bg-wrapper.typography {
 	background-image: url('../images/mbhp/fonts.png');
 	background-repeat: no-repeat;
+}
+
+/* Veritas User Journey */
+#proj-veritas-journey .bg-wrapper.cover {
+	background: #483d72;
+}
+
+/* ME Digital Brochure */
+#proj-me-brochure .bg-wrapper.cover {
+	background: #0077d0;
 }
 
 
