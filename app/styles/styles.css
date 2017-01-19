@@ -668,6 +668,20 @@ footer div {
 	background: #0077d0;
 }
 
+/* BofA Heuristics */
+#proj-bofa-heuristics .bg-wrapper.cover {
+	background: #d4001a;
+}
+
+/* ML Content Hub */
+#proj-ml-content-hub .bg-wrapper.cover {
+	background: #0072CE;
+}
+
+/* DD Badging */
+#proj-dd-badging .bg-wrapper.cover {
+	background: pink;
+}
 
 
 /*//// @MEDIA /////*/
