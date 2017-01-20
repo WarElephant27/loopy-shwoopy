@@ -105,6 +105,11 @@ html, body {
 	padding: 1.4rem;
 }
 
+.flex {
+	display: flex;
+	align-items: center;
+}
+
 .col-2 {
 	width: 50%;
 	display: inline-block;
@@ -156,7 +161,6 @@ html, body {
 h1, h2, h3 {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
-	text-transform: uppercase;
 	margin: 1rem 0;
 }
 
@@ -181,24 +185,24 @@ time, mark {
 }
 
 h1 {
-	font-size: 2rem;
-	letter-spacing: -0.5;
-	line-height: 2.5rem;
+	font-size: 1.8rem;
+	letter-spacing: 0.5;
+	line-height: 2.2rem;
 }
 
 h2 {
-	font-size: 1.5rem;
-	line-height: 2.25rem;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
 }
 
 h3 {
-	font-size:1.25rem;
-	line-height: 2rem;
+	font-size:1.2rem;
+	line-height: 1.6rem;
 }
 
 h4 {
-	font-size: 1.15rem;
-	line-height: 2rem;
+	font-size: 1.1rem;
+	line-height: 1.6rem;
 }
 
 h5 {
@@ -207,8 +211,8 @@ h5 {
 }
 
 h6 {
-	font-size: 0.85rem;
-	line-height: 1.25rem;
+	font-size: 0.86rem;
+	line-height: 1.4rem;
 }
 
 p {
@@ -227,7 +231,7 @@ p {
 }
 
 .txt-small {
-	font-size: .75rem;
+	font-size: .8rem;
 	line-height: 1.4rem;
 }
 
@@ -434,8 +438,17 @@ footer div {
 
 /*//// PADDING, MARGINS, POSITIONING ////*/
 /*//////////////////////////////////////*/
+.marg-top-lrg {
+	margin-top: 2.6rem;
+}
 
+.marg-top-mid {
+	margin-top: 1.6rem;
+}
 
+.marg-top-small {
+	margin-top: 1rem;
+}
 
 /*//////// LAYOUT MODULES ///////////*/
 /*//////////////////////////////////*/
@@ -455,7 +468,7 @@ footer div {
 
 .cover h1, .cover h2 {
 	color: #ffffff;
-	margin: 0;
+	margin: 1rem 0 0 0;
 }
 
 .cover .content-wrapper {
@@ -468,6 +481,7 @@ footer div {
 .bg-wrapper.intro {
 	position: relative;
 	margin: 100vh 0 0 0;
+	padding: 3rem 0 0 0;
 	background: #56a08b;
 	color: #ffffff;
 }
@@ -642,15 +656,19 @@ footer div {
 
 /* MBHP */
 #proj-mbhp .bg-wrapper.cover {
-	background: #a83338;
+	background-image: url('../images/mbhp/cover.jpg');
+	background-size: cover;
 }
 
 #proj-mbhp .bg-wrapper.grid {
 	background-image: url('../images/mbhp/grid.png');
+	background-size: cover;
 }
 
 #proj-mbhp .bg-wrapper.typography {
 	background-image: url('../images/mbhp/fonts.png');
+	background-size: contain;
+	background-position: center;
 	background-repeat: no-repeat;
 }
 
@@ -662,7 +680,14 @@ footer div {
 
 /* ME Digital Brochure */
 #proj-me-brochure .bg-wrapper.cover {
-	background: #0077d0;
+	background-image: url('../images/me-brochure/cover.jpg');
+	background-size: cover;
+	background-color: #0077d0;
+}
+
+#proj-me-brochure .bg-wrapper.intro {
+	padding-top: 0;
+	letter-spacing: -0.02rem;
 }
 
 /* BofA Heuristics */
