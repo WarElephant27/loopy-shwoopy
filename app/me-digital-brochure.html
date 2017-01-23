@@ -7,18 +7,78 @@
 		<link href="styles/styles.css" type="text/css" rel="stylesheet">
 		<link href="styles/mbhp.css" type="text/css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Palanquin:300,400,700|Poppins:300,500,700" rel="stylesheet">
+		<script src="https://use.fontawesome.com/6a4767e24c.js"></script>
 
 		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-		<script src="scripts/animation2.js"></script>
-		<script src="scripts/animation.js"></script>
-
+		<script src="scripts/scripts.js"></script>
 	</head>
 
 	<body>
 	<div id="proj-me-brochure" class="body-wrapper project">
 	<!-- GLOBAL NAV -->
 	<!-- ////////// -->
-	
+	<nav id="global-nav" class=""> 
+		<div class="mobile-nav content-wrapper">
+			
+		</div>
+
+		<div class="nav-inner bg-wrapper hidden">
+
+			<div class="content-wrapper">
+
+			<a href="index.html">
+			<div class="project-card">
+				<span class="txt-mid">Home</span>
+			</div>
+			</a>
+			
+			<a href="mbhp.html">
+			<div class="project-card">
+				<span class="txt-small">Metropolitan Boston Housing Partnership (MBHP)</span>
+				<span class="txt-mid">Visual Identity System</span>
+			</div>
+			</a>
+
+			<a href="veritas-user-flow.html">
+			<div class="project-card">
+				<span class="txt-small">Veritas Genetics</span>
+				<span class="txt-mid">User Journey Mapping</span>
+			</div>
+			</a>
+
+			<a href="dd-badging.html">
+			<div class="project-card">
+				<span class="txt-small">Dunkin Donuts</span>
+				<span class="txt-mid">In-App Badging Syntax</span>
+			</div>
+			</a>
+
+			<a href="bofa-heuristics.html">
+			<div class="project-card">
+				<span class="txt-small">Bank of America</span>
+				<span class="txt-mid">Microsite Heuristics Analysis</span>
+			</div>
+			</a>
+
+			<a href="me-digital-brochure.html">
+			<div class="project-card">
+				<span class="txt-small">Merrill Edge</span>
+				<span class="txt-mid">Digital Brochure</span>
+			</div>
+			</a>
+
+			<a href="ml-content-hub.html">
+			<div class="project-card">
+				<span class="txt-small">Merrill Lynch</span>
+				<span class="txt-mid">Intranet Content Hub</span>
+			</div>
+			</a>
+
+			</div>
+
+		</div>
+
+	</nav>
 	<!-- end global nav -->
 
 	<!-- BODY ELEMENTS -->
@@ -29,6 +89,7 @@
 	<div class="content-wrapper">
 		<h2>Merrill Edge</h2>
 		<h1>Digital Brochure</h1>
+		<svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.33 20.94"><defs><style>.cls-2{fill:none;stroke:#ffffff;stroke-miterlimit:10;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><line class="cls-2" x1="11.67" x2="11.67" y2="18.93"/><polyline class="cls-2" points="22.98 8.92 11.67 20.24 0.35 8.92"/></g></g></svg>
 	</div>
 
 	</div>
@@ -69,7 +130,7 @@
 	</div>
 
 	<!-- -->
-	<div class="bg-wrapper">
+	<div class="bg-wrapper auto-height">
 		<div class="content-wrapper">
 		<p>Brainstorming with the client, and interviewing financial service advisors, helped us understand the need and define the project’s deliverable.</p>
 
@@ -78,7 +139,7 @@
 	</div>
 
 	<!-- -->
-	<div class="bg-wrapper">
+	<div class="bg-wrapper auto-height full-imgs">
 		<img src="images/me-brochure/user-journey.jpg">
 		<div class="content-wrapper">
 		<p>The UX team creates a master user journey and identifies where the brochure will be used. These journeys helped our team and the client visualize what would be needed from this project, and how the end product could be used in different scenarios.</p>
@@ -90,8 +151,8 @@
 	</div>
 
 	<!-- -->
-	<div class="bg-wrapper flex">
-		<div class="content-wrapper">
+	<div class="bg-wrapper auto-height flex">
+		<div class="content-wrapper col-imgs">
 		<img src="images/me-brochure/wires.jpg">
 		<p>Wireframing let the team decide what content to use, and what our core user flow looks like
 		</p>
@@ -99,22 +160,23 @@
 	</div>
 
 	<!-- -->
-	<div class="bg-wrapper flex">
+	<div class="bg-wrapper auto-height flex">
 
-		<div class="content-wrapper">
+		<div class="content-wrapper col-imgs">
 		<img src="images/me-brochure/ui-design.jpg">
 
 		<p>UI design gave us an opportunity to breath new life into a somewhat anemic visual brand. Initial prototyping explored animation and interactions.
 		</p>
-		<span class="divider"></span>
+		
 		</div>
-
+		
 	</div>
 
 	<!-- -->
-	<div class="bg-wrapper flex">
+	<div class="bg-wrapper auto-height flex">
 
 		<div class="content-wrapper">
+		<span class="divider"></span>
 		<p class="txt-mid">The finished product: a polished prototype for client presentation.</p>
 
 		<p>A hand-coded an HTML prototype of the brochure brought the work to life with animations and interaction, using CSS3 and JavaScript.</p>
@@ -136,7 +198,7 @@
  		<p>A clean, inviting design that stuck to the brand styles, and an elegant way of guiding customers toward an appropriate product</p>
 		</div>
 	</div>
-	</div>
+	
 
 
 
@@ -144,19 +206,23 @@
 	<!-- Related Projects -->
 	<div class="proj-related">
 
+		<a href="bofa-heuristics.html">
 		<div class="project-card">
-			<span class="txt-small">Metropolitan Boston Housing Partnership (MBHP)</span>
-			<span class="txt-mid">Visual Identity System</span>
+			<span class="txt-small">Bank of America</span>
+			<span class="txt-mid">Microsite Heuristics Analysis</span>
+			<svg class="arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.33 20.94"><defs><style>.cls-1{fill:none;stroke:#56a08b;stroke-miterlimit:10;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><line class="cls-1" x1="11.67" x2="11.67" y2="18.93"/><polyline class="cls-1" points="22.98 8.92 11.67 20.24 0.35 8.92"/></g></g></svg>
+		</div>
+		</a>
+
+		<a href="ml-content-hub.html">
+		<div class="project-card">
+			<span class="txt-small">Merrill Lynch</span>
+			<span class="txt-mid">Intranet Content Hub</span>
 			<svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.33 20.94"><defs><style>.cls-1{fill:none;stroke:#56a08b;stroke-miterlimit:10;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><line class="cls-1" x1="11.67" x2="11.67" y2="18.93"/><polyline class="cls-1" points="22.98 8.92 11.67 20.24 0.35 8.92"/></g></g></svg>
 		</div>
 		</a>
 
-		<div class="project-card">
-			<span class="txt-small">Client Name</span>
-			<span class="txt-mid">Project Name</span>
-			<svg class="arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.33 20.94"><defs><style>.cls-1{fill:none;stroke:#56a08b;stroke-miterlimit:10;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><line class="cls-1" x1="11.67" x2="11.67" y2="18.93"/><polyline class="cls-1" points="22.98 8.92 11.67 20.24 0.35 8.92"/></g></g></svg>
-		</div>
-
+	</div>
 	</div>
 	<!-- end body elements -->
 
@@ -164,9 +230,11 @@
 	<!-- GLOBAL FOOTER -->
 	<!-- ///////////// -->
 	<footer>
-		<a href="" class="button">Get in Touch</a>
-		<a href="">About</a>
-		<a href="">Home</a>
+		<a href="index.html">home</a> |   
+		<a href="https://www.linkedin.com/in/swillenburg" class="link"><span class="fa fa-linkedin-square" aria-hidden="true"></span></a>  |  
+		<a href="https://angel.co/sierra-willenburg" class="link"><span class="fa fa-angellist" aria-hidden="true"></span></a>  
+		<!--<a href="https://www.instagram.com/probablyanelephant"><span class="fa fa-instagram" aria-hidden="true"></span></a> | <a href="https://dribbble.com/probablyanelephant"><span class="fa fa-dribbble" aria-hidden="true"></span></a>  |  <a href=""><span class="fa fa-medium" aria-hidden="true"></span></a>  |  <a href=""><span class="fa fa-behance-square" aria-hidden="true"></span></a>-->
+		<p>sierra.willenburg.12&nbsp;@&nbsp;gmail.com</p>
 		<div>&#8679; this end up &#8679;</div>
 	</footer>
 	<!-- end global footer -->

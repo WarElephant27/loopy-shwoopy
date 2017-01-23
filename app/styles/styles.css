@@ -60,6 +60,7 @@ html, body {
 	position: relative;
 	margin: 0;
 	padding: 0;
+	height: 100vh;
 	overflow-x: hidden;
 }
 
@@ -323,16 +324,19 @@ img {
 svg.arrow-down {
 	width: 26px;
 	display: block;
+	margin: 1rem 0 0 0;
 }
 
 svg.arrow-right {
 	width: 26px;
+	margin: 0.4rem 0 0 0;
 	display: inline-block;
 	transform: rotate(-90deg);
 }
 
 svg.arrow-left {
 	width: 26px;
+	margin: 0.4rem 0 0 0;
 	display: inline-block;
 	transform: rotate(90deg);
 }
@@ -341,6 +345,11 @@ svg.arrow-left {
 .bg-white {
 	background: #ffffff;
 }
+
+.img-border {
+	border: 1px solid #9ac7b9;		
+}
+
 
 /*//// GLOBAL SECTIONS ////*/
 /*////////////////////////*/
@@ -352,42 +361,18 @@ svg.arrow-left {
 	padding: 0;
 	position: fixed;
 	top: 0;
+	z-index: 100000000;
 	text-align: right;
-}
-
-#global-nav ul {
-	width: auto;
-	display: inline-block;
-	position: relative;
-	text-align: right;
-	padding: 1.4rem;
-}
-
-#global-nav ul li {
-	display: inline-block;
-	position: relative;
-	width: auto;
-	padding: 0.2rem .75rem;
-	background: #56a18b;
-	color: #ffffff;
-	font-weight: 500;
-	text-align: center;
-	text-transform: uppercase;
-	text-decoration: none;
-}
-
-#global-nav ul li:nth-child(1) {
-	margin: 0 0.5rem;
 }
 
 #global-nav .mobile-nav {
 	width: 2.4rem;
 	height: 2.4rem;
 	position: absolute;
-	right: 1.4rem;
+	right: 2rem;
 	top: 1.4rem;
 	z-index: 400;
-	background: #56a18b;
+	background: url('../images/hamburger.svg') #56a18b;
 	border: 1px solid #ffffff;
 }
 
@@ -396,7 +381,14 @@ svg.arrow-left {
 	width: 100vw;
 	position: absolute;
 	top: 0;
+	z-index: 300;
 	background: #ffffff;
+}
+
+#global-nav .nav-inner .content-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 #global-nav .nav-inner .content-wrapper {
@@ -406,7 +398,6 @@ svg.arrow-left {
 
 #global-nav .nav-inner .content-wrapper a {
 	display: block;
-	/*padding: 22px 0;*/
 	text-decoration: none;
 
 }
@@ -422,10 +413,9 @@ footer {
 }
 
 footer a {
-	display: block;
-	padding: 1rem;
-	margin:.5rem 0;
-	font-size: 1.5rem;
+	display: inline-block;
+	padding: 0.4rem;
+	margin: 0.4rem 0;
 	text-align: center;
 	text-decoration: none;
 }
@@ -519,13 +509,12 @@ footer div {
 }
 
 
-
 /* Client Quote */
 .client-quote {
 	margin: 1.4rem 0;
 	padding: 1.4rem;
 	background-color: #ddece8;
-	border: 1px #333333 solid;
+	border: 1px #56a08b solid;
 }
 
 .client-quote span {
@@ -540,10 +529,6 @@ footer div {
 	font-size: 1rem;
 	color: #56a08b;
 	text-align: center;
-}
-
-.pros {
-
 }
 
 .cons {
@@ -566,14 +551,31 @@ footer div {
 	position: relative;
 }
 
+.proj-related a {
+	text-decoration: none;
+}
 
 /* Project Cards */
 .nav-inner .project-card {
 	background: none;
 	color: #56a08b;
-	margin: 1px 0 0 0;
-	padding: .6rem 0 0 0;
+	height:13vh;
 	position: relative;
+}
+
+.nav-inner .project-card:hover {
+	background: #56a08b;
+	width: auto;
+	color: #ffffff;
+	transition: background 1s, color .5s;
+}
+
+.nav-inner .project-card .txt-small {
+	color: #333333;
+}
+
+.nav-inner .project-card:hover .txt-small {
+	color: #ffffff;
 }
 
 .nav-inner .project-card::after {
@@ -582,8 +584,10 @@ footer div {
 	width: 100px;
 	height: 1px;
 	margin: .6rem auto 0 auto;
-	background: #56a08b;
+	background: #9ac7b9;
 }
+
+
 
 #index .projects .project-card {
 	background: #333333;
@@ -612,7 +616,7 @@ footer div {
 }
 
 #index .bg-wrapper.cover  {
-	background: url('../images/index-bg.png');
+	background: url('../images/index-bg.png') #56a08b;
 	background-size: cover;
 	position: fixed;
 	top: 0;
@@ -650,7 +654,7 @@ footer div {
 	text-align: center;
 }
 
-#index .contact .arrow-down {
+#index svg.arrow-down {
 	margin: 1rem auto;
 }
 
@@ -690,9 +694,31 @@ footer div {
 	letter-spacing: -0.02rem;
 }
 
+#proj-me-brochure .col-imgs p {
+	margin-left: 2rem;
+}
+
 /* BofA Heuristics */
 #proj-bofa-heuristics .bg-wrapper.cover {
 	background: #d4001a;
+}
+
+#proj-bofa-heuristics .bg-wrapper.intro {
+	padding-top: 0;
+}
+
+#proj-bofa-heuristics .analysis ul {
+	margin: 0 0 0 1.4rem;
+}
+
+#proj-bofa-heuristics .analysis ul li {
+	display: list-item;
+	list-style: disc outside;
+	color: #56a08b;
+}
+
+#proj-bofa-heuristics .analysis ul li span {
+	color: #000000;
 }
 
 /* ML Content Hub */
@@ -700,9 +726,14 @@ footer div {
 	background: #0072CE;
 }
 
+#proj-ml-content-hub .ui-design img {
+	margin: 1rem 0 0 0;
+}
+
 /* DD Badging */
 #proj-dd-badging .bg-wrapper.cover {
-	background: pink;
+	background-image: url('../images/dd-badging/cover.jpg');
+	background-size: cover;
 }
 
 
@@ -713,3 +744,148 @@ footer div {
 @-ms-viewport{
   width: device-width;
 }
+
+@media all and (min-width: 780px) {
+	.content-wrapper {
+		max-width: 740px;
+		margin: 0 auto;
+	}
+
+	.col-imgs {
+		display: flex;
+		max-width: 740px;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+	.col-imgs img {
+		width: 50%;
+	}
+
+	.full-imgs {
+		width: 740px;
+		margin: 0 auto;
+	}
+
+	.full-imgs img {
+		width: 740px;
+	}
+
+	.cover .content-wrapper {
+	position: relative;
+	margin-top: 60vh;
+	}
+
+	.bg-wrapper.intro {
+	display: flex;
+	align-items: center;
+	}
+
+	.bg-wrapper.intro .team {
+	position: relative;
+	width: 50%;
+	margin: 4rem auto 0 auto;
+	text-align: left;
+	}
+
+	.bg-wrapper.intro .team li:last-child::after {
+		position: absolute;
+		width: auto;
+		right: 0.4rem;
+	}
+
+	.pros-cons {
+	display: flex;
+	align-items: center;
+	}
+
+	.proj-related {
+	display: flex;
+	width: 740px;
+	margin: 0 auto;
+	padding: 2rem 0;
+	}
+
+	.proj-related a {
+	width: 50%;
+	}
+
+	.proj-related .project-card {
+	margin: 0.4rem 0.4rem 0 0.4rem;
+	padding: 1.4rem;
+	position: relative;
+	}
+
+
+	/* Index */
+	#index .cover .content-wrapper {
+		position: relative;
+		margin: 25% auto;
+		text-align: center;
+	}
+
+	#index .index-logo {
+		padding: 0 0 2rem 0;
+		margin: 0 auto;
+		width: 70px;
+	}
+
+	#index .bg-wrapper.projects {
+		max-width: 700px;
+		padding-top: 1.4rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#index .projects .project-card {
+		width: 100%;
+		display: inline-block;
+		margin: 1px 0 0 0;
+		padding: 1.4rem;
+		position: relative;
+	}
+
+	#index .projects .project-card svg {
+		position: absolute;
+		right: 1.4rem;
+		bottom: 1.6rem;
+	}
+
+	/* MBHP */
+	#proj-mbhp .colors {
+		display: flex;
+		max-width: 780px;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+	#proj-mbhp .colors img {
+		width: 50%;
+	}
+
+	/* DD Badging */
+	#proj-dd-badging .full-imgs img {
+		width: 75%;
+	}
+
+	/* BofA Heuristics */
+	#proj-bofa-heuristics .full-imgs img {
+		width: 75%;
+	}
+
+	#proj-bofa-heuristics .col-imgs img {
+		width: 70%;
+	}
+	
+	/* ME Brochure */
+	#proj-me-brochure .col-imgs img {
+		width: 75%;
+	}
+
+	#proj-me-brochure .bg-wrapper.auto-height {
+		height: auto;
+		margin: 6rem auto;
+	}
+
+
+} 
