@@ -559,7 +559,7 @@ footer div {
 .nav-inner .project-card {
 	background: none;
 	color: #56a08b;
-	height:13vh;
+	height:10vh;
 	position: relative;
 }
 
@@ -583,7 +583,7 @@ footer div {
 	display: block;
 	width: 100px;
 	height: 1px;
-	margin: .6rem auto 0 auto;
+	margin: .4rem auto 0 auto;
 	background: #9ac7b9;
 }
 
@@ -639,7 +639,7 @@ footer div {
 	padding: 0 22% 1.4rem 22%;
 }
 
-#index .bg-wrapper.projects {
+#index .wrapper.projects {
 	margin: 100vh 0 0 0;
 	background: #ffffff;
 }
@@ -647,7 +647,7 @@ footer div {
 #index .about-me {
 	padding: 0 0 4rem 0;
 	border-bottom: 1px solid #56a08b;
-}
+} 
 
 #index .contact {
 	margin: 4rem 0 0 0;
@@ -679,6 +679,11 @@ footer div {
 
 /* Veritas User Journey */
 #proj-veritas-journey .bg-wrapper.cover {
+	background: #483d72;
+}
+
+/* Veritas Visuals */
+#proj-veritas-visuals .bg-wrapper.cover {
 	background: #483d72;
 }
 
@@ -719,6 +724,11 @@ footer div {
 
 #proj-bofa-heuristics .analysis ul li span {
 	color: #000000;
+}
+
+/* BofA Budgeting */
+#proj-bofa-budgeting .bg-wrapper.cover {
+	background: #d4001a;
 }
 
 /* ML Content Hub */
@@ -830,7 +840,7 @@ footer div {
 		width: 70px;
 	}
 
-	#index .bg-wrapper.projects {
+	#index .wrapper.projects {
 		max-width: 700px;
 		padding-top: 1.4rem;
 		margin-left: auto;
