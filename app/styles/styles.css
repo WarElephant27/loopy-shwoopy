@@ -83,7 +83,6 @@ html, body {
 
 /*//// GRID ////*/
 /*/////////////*/
-
 .wrapper, .bg-wrapper, .content-wrapper {
 	width: auto;
 	display: block;
@@ -405,9 +404,8 @@ svg.arrow-left {
 /*------ FOOTER -------*/
 footer {
 	margin: 0;
-	padding: 1rem 1rem 2rem 1rem;	
-	background: #333333;
-	border-top: 1px solid #cccccc;
+	padding: 3rem 3rem 4rem 3rem;	
+	background: #222222;
 	text-align: center;
 	color: #bbbbbb;
 }
@@ -421,7 +419,9 @@ footer a {
 }
 
 footer div {
-	border-top: 1px solid #cccccc;
+	width: 50%;
+	margin: 0 auto;
+	border-top: 1px solid #56a08b;
 	padding: 1rem 0 0 0;
 }
 
@@ -587,71 +587,65 @@ footer div {
 	background: #9ac7b9;
 }
 
-
-
 #index .projects .project-card {
-	background: #333333;
-	color: #56a08b;
+	background: #222222;
+	color: #111111;
+	box-shadow: -2px -4px 4px;
 	margin: 1px 0 0 0;
 	padding: 1.4rem;
 	position: relative;
 }
 
+#index .projects .project-card .card-info {
+	color: #56a08b;
+	display: inline-block;
+	width: 70%;
+}
+
+#index .projects .project-card span {
+
+}
+
 #index .projects .project-card svg {
-	position: absolute;
-	right: 1.4rem;
-	bottom: 1.6rem;
+	position: relative;
+	display: inline-block;
 }
 
 #index .projects a {
 	text-decoration: none;
+	display: inline;
 }
 
 
 /*/////// PROJECT PAGES ////////*/
 /*/////////////////////////////*/
 /* Index */
-#index .bg-wrapper.projects, #index .bg-wrapper.about-contact {
-	background: #ffffff;
+#index {
+	background: #333333;
+	color: #ffffff;
 }
 
-#index .bg-wrapper.cover  {
-	background: url('../images/index-bg.png') #56a08b;
-	background-size: cover;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: -1;
+#index .wrapper {
+	background: none;
 }
 
-#index .bg-wrapper.cover::after {
-	content: '';
-	background: #56a08b;
-	opacity: .75;
-	height: 100vh;
-	width: 100%;
-	position: absolute;
-	top: 0;
-	z-index: -1;
+#index .cover {
+	height: 80vh;
 }
 
 #index .index-logo {
-	padding: 0 22% 1.4rem 22%;
-}
-
-#index .wrapper.projects {
-	margin: 100vh 0 0 0;
-	background: #ffffff;
+	height: 60px;
+	display: inline-block;
 }
 
 #index .about-me {
 	padding: 0 0 4rem 0;
-	border-bottom: 1px solid #56a08b;
 } 
 
 #index .contact {
-	margin: 4rem 0 0 0;
+	height: 40vh;
 	text-align: center;
+	padding: 10vh 0 0 0;
 }
 
 #index svg.arrow-down {
@@ -828,37 +822,55 @@ footer div {
 
 
 	/* Index */
-	#index .cover .content-wrapper {
+	#index .cover {
 		position: relative;
-		margin: 25% auto;
-		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#index .cover .index-title {
+		width: 40%;
+		margin: 0 1.4rem;
+		vertical-align: top;
 	}
 
 	#index .index-logo {
-		padding: 0 0 2rem 0;
-		margin: 0 auto;
+		display: inline-block;
+		margin: 0 1.5rem 0 0;
 		width: 70px;
 	}
 
-	#index .wrapper.projects {
-		max-width: 700px;
-		padding-top: 1.4rem;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	#index .projects .project-card {
-		width: 100%;
+	#index .index-name {
+		width: auto;
 		display: inline-block;
-		margin: 1px 0 0 0;
-		padding: 1.4rem;
-		position: relative;
+		vertical-align: top;
 	}
 
-	#index .projects .project-card svg {
-		position: absolute;
-		right: 1.4rem;
-		bottom: 1.6rem;
+	#index .index-name h1, #index .index-name h2 {
+		margin: 0;
+	}
+
+	#index .cover .about-me {
+		width: 60%;
+	}
+
+	#index .content-wrapper.projects {
+		max-width: 80%;
+	}
+
+	#index .projects .card-wrapper {
+		width: 32%;
+		display: inline-block;
+		margin: 0 0.5rem 0.5rem 0;
+		vertical-align: top;
+	}
+
+	#index .projects a .project-card {
+		width: 100%;
+		height: 8rem;
+		display: inline-block;
+		padding: 1.4rem;
 	}
 
 	/* MBHP */
@@ -899,3 +911,10 @@ footer div {
 
 
 } 
+
+@media all and (min-width: 960px) {
+	.content-wrapper {
+		max-width: 960px;
+		margin: 0 auto;
+	}
+}
